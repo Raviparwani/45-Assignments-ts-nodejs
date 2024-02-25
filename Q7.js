@@ -1,0 +1,23 @@
+"use strict";
+// 7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result
+// in the number 8. Be sure to enclose your operations in print statements to see the results. 
+//example 1
+console.log("\nExample1", "-".repeat(50));
+console.log(5 + 3);
+console.log(18 - 10);
+console.log(2 * 4);
+console.log(16 / 2);
+//example 2
+console.log("\nExample2", "-".repeat(50));
+// Addition
+let additionResult = 5 + 3;
+console.log("Addition:", additionResult);
+// Subtraction
+let subtractionResult = 10 - 2;
+console.log("Subtraction:", subtractionResult);
+// Multiplication
+let multiplicationResult = 4 * 2;
+console.log("Multiplication:", multiplicationResult);
+// Division
+let divisionResult = 16 / 2;
+console.log("Division:", divisionResult);
