@@ -17,6 +17,7 @@ let number1: number = 22
 console.log("Is number1,  equal to 11+11? I predict True.");
 console.log(number1 == 22);
 
+
 // Test 1 False
 console.log("Is number1, not equal to 11+11? I predict False.");
 console.log(number1 !== 22);
@@ -59,3 +60,4 @@ console.log(number1 - 2 == 20);
 // // // // Test 4 false
 console.log("Is number1 Added by 2  equal to 20? I predict False.");
 console.log(number1 / 2 == 22);
+
