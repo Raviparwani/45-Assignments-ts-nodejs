@@ -6,19 +6,26 @@
 // • Write one version of this program that runs the if block and another that runs the else block.
 
 
-// Running the if block (alien is green):
-let alien_color: string = 'green';
 
-if (alien_color === 'green') {
-    console.log("You just earned 5 points for shooting the green alien.");
+// Version that runs the if block (alien_color is 'green')
+let alien_color_if = 'green';
+
+if (alien_color_if === 'green') {
+    console.log("• Version that runs the if block alien_color is 'green'\n")
+  console.log("Player just earned 5 points for shooting the alien!");
 } else {
-    console.log("You just earned 10 points for shooting an alien of a different color.");
+  console.log("Player just earned 10 points.");
 }
-// Running the else block (alien is not green):
-// let alie_ncolor: string = 'green';
 
-if (alien_color === 'red') {
-    console.log("You just earned 5 points for shooting the green alien.");
+console.log("-".repeat(50))
+
+
+// Version that runs the else block (alien_color is 'red')
+let alien_color_else = 'red';
+
+if (alien_color_else === 'green') {
+  console.log("Player just earned 5 points for shooting the alien!");
 } else {
-    console.log("You just earned 10 points for shooting an alien of a different color.");
+    console.log("• Version that runs the else block alien_color is 'red'\n")
+  console.log("Player just earned 10 points.");
 }
