@@ -14,53 +14,55 @@
 // 1.(Tests for equality and inequality with strings)
 const string1: string = "car";
 const string2: string = "bike";
+console.log("• Tests for equality and inequality with strings\n")
 console.log(string1 === string2);
 console.log(string1 !== string2);
 
 // 2.(Tests using the lower case function)
 const uppercaseString: string = "INFORMATION";
+console.log("• Tests using the lower case function\n")
 console.log(uppercaseString.toLowerCase() === "information");
-console.log(uppercaseString.toLowerCase() === "InFor mAtion");
+console.log(uppercaseString.toLowerCase() === "InFormAtion\n");
 
-// 3.(Numerical tests involving equality and inequality, greater than and less than,
-// greater than or equal to, and less than or equal to)
+// 3.("Numerical tests involving equality and inequality, greater than and less than,
+// greater than or equal to, and less than or equal to")
+console.log("• Tests using the Numerical tests involving equality and inequality, greater than and less than,\n greater than or equal to, and less than or equal to")
 const num1: number = 100;
 const num2: number = 50;
-console.log(num1 === num2);
-console.log(num1 !== num2);
-console.log(num1 < num2);
-console.log(num1 > num2);
-console.log(num1 <= num2);
-console.log(num1 >= num2);
+console.log(num1 === num2,"equality");
+console.log(num1 !== num2,"inequality");
+console.log(num1 < num2,"less than");
+console.log(num1 > num2,"greater than");
+console.log(num1 <= num2,"less than or equal to");
+console.log(num1 >= num2,"greater than or equal to\n");
 
 //4.(Tests using "and" and "or" operators)
 
-const day: boolean = true;
-const night: boolean = false;
-console.log(day && night);
- console.log(day || night);
+const one: boolean = true;
+const two: boolean = false;
+const three: boolean = true;
+const four: boolean = false;
 
-// Test using & in false
-const faizaComing: boolean = true;
-const SidraComing: boolean = false;
+console.log("• Tests using && operator ")
+console.log(one&&three,"Because both conditions are same");
+console.log(one&&two,"Because both conditions are not same\n");
 
-console.log(faizaComing && SidraComing); // false because both contiditions are diffrent to eachother
-console.log(faizaComing || SidraComing); // true because one condition is true in or
-
-
-// // Test using & in true 
-const SanaComing: boolean = true;
-const SanamaComing: boolean = true;
-
-console.log(SanaComing && SanamaComing); //true because both conditions are true in and
-console.log(SanaComing || SanaComing);   //true because both conditions are true in or
+console.log("• Tests using || operator ")
+console.log(one||three,"Because both conditions are same");
+console.log(one||two,"Because one condition is False but at least one condition is true");
+console.log(two||four,"Because both conditions are false\n");
 
 
-// 5. (Test whether an item is in an array)
 const fruits: string[] = ["Grapes", "Mango", "Banana", "Gava"];
 
+//• Test whether an item is or not in a array
+
 // Test 1
-console.log(fruits.some(fruit => fruit === "Grapes"));  // true (because "Grapes" is in the array)
+console.log("• Test whether an item is  in a array")
+
+console.log(fruits.some(fruit => fruit === "Grapes"));  // true (because "Grapes" are in the array)
 
 // Test 2
-console.log(fruits.some(fruit => fruit === "grapes"));  // false (because "grapes" is not in the array, and some is case-sensitive)
+console.log("• Test whether an item is not in a array")
+
+console.log(fruits.some(fruit => fruit === "grapes"));  // false (because "grapes" are not in the array, and some is case-sensitive)
