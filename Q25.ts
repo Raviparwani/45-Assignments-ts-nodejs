@@ -6,15 +6,25 @@
 // // • Write one version of this program that passes the if test and another that fails.
 // // (The version that fails will have no output.)
 
-let alianColor: string = 'green';
-// // Version that passes the if test (green alien)
-if (alianColor === 'green') {
-    console.log("player just earned 5 points!");
-}
 
-//  Version that fails the if test (red alien)
-alianColor = 'red';
+// // Version that passes the if test 
 
-if (alianColor === 'green') {
+let alianColorPass: string = "Green";
+
+if (alianColorPass === 'Green') {
     console.log("player just earned 5 points!");
-}
+} else {
+    console.log("No points earned.");
+  }
+  console.log("• passes the test alianColorPass is Green\n")
+
+  console.log("-".repeat(50))
+//  Version that fails the if test 
+let alianColorFail = "Red";
+
+if (alianColorFail === "Green") {
+    console.log("player just earned 5 points!");
+}  else {
+    console.log("No points earned.");
+  }
+console.log("• fails the test alianColorFail is Red\n")
