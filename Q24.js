@@ -1,3 +1,4 @@
+"use strict";
 //Q24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. 
 //If you want to try more comparisons, write more tests. Have at least one True and one False
 // result for each of the following:
@@ -9,42 +10,44 @@
 // • Test whether an item is in a array
 // • Test whether an item is not in a array
 // 1.(Tests for equality and inequality with strings)
-var string1 = "car";
-var string2 = "bike";
+const string1 = "car";
+const string2 = "bike";
+console.log("• Tests for equality and inequality with strings\n");
 console.log(string1 === string2);
 console.log(string1 !== string2);
 // 2.(Tests using the lower case function)
-var uppercaseString = "INFORMATION";
+const uppercaseString = "INFORMATION";
+console.log("• Tests using the lower case function\n");
 console.log(uppercaseString.toLowerCase() === "information");
-console.log(uppercaseString.toLowerCase() === "InFor mAtion");
-// 3.(Numerical tests involving equality and inequality, greater than and less than,
-// greater than or equal to, and less than or equal to)
-var num1 = 100;
-var num2 = 50;
-console.log(num1 === num2);
-console.log(num1 !== num2);
-console.log(num1 < num2);
-console.log(num1 > num2);
-console.log(num1 <= num2);
-console.log(num1 >= num2);
+console.log(uppercaseString.toLowerCase() === "InFormAtion\n");
+// 3.("Numerical tests involving equality and inequality, greater than and less than,
+// greater than or equal to, and less than or equal to")
+console.log("• Tests using the Numerical tests involving equality and inequality, greater than and less than,\n greater than or equal to, and less than or equal to");
+const num1 = 100;
+const num2 = 50;
+console.log(num1 === num2, "equality");
+console.log(num1 !== num2, "inequality");
+console.log(num1 < num2, "less than");
+console.log(num1 > num2, "greater than");
+console.log(num1 <= num2, "less than or equal to");
+console.log(num1 >= num2, "greater than or equal to\n");
 //4.(Tests using "and" and "or" operators)
-var day = true;
-var night = false;
-console.log(day && night);
-console.log(day || night);
-// Test using & in false
-var faizaComing = true;
-var SidraComing = false;
-console.log(faizaComing && SidraComing); // false because both contiditions are diffrent to eachother
-console.log(faizaComing || SidraComing); // true because one condition is true in or
-// // Test using & in true 
-var SanaComing = true;
-var SanamaComing = true;
-console.log(SanaComing && SanamaComing); //true because both conditions are true in and
-console.log(SanaComing || SanaComing); //true because both conditions are true in or
-// 5. (Test whether an item is in an array)
-var fruits = ["Grapes", "Mango", "Banana", "Gava"];
+const one = true;
+const two = false;
+const three = true;
+const four = false;
+console.log("• Tests using && operator ");
+console.log(one && three, "Because both conditions are same");
+console.log(one && two, "Because both conditions are not same\n");
+console.log("• Tests using || operator ");
+console.log(one || three, "Because both conditions are same");
+console.log(one || two, "Because one condition is False but at least one condition is true");
+console.log(two || four, "Because both conditions are false\n");
+const fruits = ["Grapes", "Mango", "Banana", "Gava"];
+//• Test whether an item is or not in a array
 // Test 1
-console.log(fruits.some(function (fruit) { return fruit === "Grapes"; })); // true (because "Grapes" is in the array)
+console.log("• Test whether an item is  in a array");
+console.log(fruits.some(fruit => fruit === "Grapes")); // true (because "Grapes" are in the array)
 // Test 2
-console.log(fruits.some(function (fruit) { return fruit === "grapes"; })); // false (because "grapes" is not in the array, and some is case-sensitive)
+console.log("• Test whether an item is not in a array");
+console.log(fruits.some(fruit => fruit === "grapes")); // false (because "grapes" are not in the array, and some is case-sensitive)
