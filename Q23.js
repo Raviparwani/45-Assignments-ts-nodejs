@@ -1,3 +1,4 @@
+"use strict";
 // Q23. Conditional Tests: Write a series of conditional tests. Print a statement describing
 // each test and your prediction for the results of each test. Your code should look something like this:
 // let car = 'subaru';
@@ -6,7 +7,7 @@
 //• Look closely at your results, and make sure you understand why each line evaluates to True or False.
 //• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 // Test 1 True
-var number1 = 22;
+let number1 = 22;
 console.log("Is number1,  equal to 11+11? I predict True.");
 console.log(number1 == 22);
 // Test 1 False
