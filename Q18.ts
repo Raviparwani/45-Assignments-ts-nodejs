@@ -47,13 +47,14 @@ let placesToVisit: string[] = ["Tokyo", "Paris", "New York", "Sydney", "Rome"];
 console.log("Original Order:", placesToVisit);
 
 // Print in alphabetical order without modifying the actual list
-console.log("Alphabetical Order:", [placesToVisit].sort());
+console.log("Alphabetical Order:", [...placesToVisit].sort());
+
 
 // Show that the array is still in its original order
 console.log("Original Order (not modified):", placesToVisit);
 
 // Print in reverse alphabetical order without changing the order of the original list
-console.log("Reverse Alphabetical Order:", [placesToVisit].sort().reverse());
+console.log("Reverse Alphabetical Order:", [...placesToVisit].sort().reverse());
 
 // Show that the array is still in its original order
 console.log("Original Order (not modified):", placesToVisit);
